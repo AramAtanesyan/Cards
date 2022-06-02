@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    height: 50px;
+    border-bottom: 1px solid;
+    width: 85%;
+    /*padding: 10px;*/
+    display: flex;
+    align-items: center;
+}
+
+button{
+    border: 1px solid;
+    height: 32px;
+    margin-left: 15px;
+}
+
+
+.instructions {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    border: 1px solid;
+    z-index: 5555;
+}
+
+.instructions .instructions-text {
+    top: 50%;
+    position: absolute;
+    font-weight: bold;
+}
+
+.footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid;
+    width: 85%;
+}
+
+
+.card:after {
+    display: inline-block;
+    content: "\00d7";
+}
