@@ -45,7 +45,24 @@ button{
 }
 
 
-.card:after {
+.card-item span:after {
     display: inline-block;
     content: "\00d7";
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card-item {
+    width: 47%;
+    border: 1px solid;
+    margin: 30px;
+    height: 60px;
+    position: relative;
 }
