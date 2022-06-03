@@ -6,4 +6,8 @@ const localStorageNumbers = localStorage.getItem('existingNumbers');
 const existingNumbers = localStorageNumbers ? localStorageNumbers.split(', ') : [];
 
 
+const maxNumber = 1000;
+const minNumber = 1;
+
+
 let isSorted = false

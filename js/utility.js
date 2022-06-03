@@ -3,15 +3,16 @@
  * @returns {string}
  */
 const getRandomUniqueNumber = function () {
-    const max = 1000;
-    const min = 1;
+    if(existingNumbers.length === maxNumber) {
+        alert('Please delete some items, and then add!!');
+    } else {
+        const randomNum =  (Math.floor( Math.random() * maxNumber) + minNumber) + '';
+        if(existingNumbers.includes(randomNum)) {
+            return getRandomUniqueNumber();
+        }
 
-    const randomNum =  (Math.floor( Math.random() * max) + min) + '';
-    if(existingNumbers.includes(randomNum)) {
-        return getRandomUniqueNumber();
+        return randomNum;
     }
-
-    return randomNum;
 }
 
 

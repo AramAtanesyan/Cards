@@ -42,8 +42,11 @@ const initAddButton = function () {
 
     addCardBtn.addEventListener('click', () => {
         let randomUniqueNumber = getRandomUniqueNumber();
-        isSorted = false;
+        if(!randomUniqueNumber) {
+            return;
+        }
 
+        isSorted = false;
         existingNumbersChangeHandler(randomUniqueNumber, 'add');
 
         const element = createCardItem(randomUniqueNumber);
